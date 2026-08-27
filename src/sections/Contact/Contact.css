@@ -1,0 +1,98 @@
+.contact {
+  min-height: 100vh;
+  padding: 10rem 8vw 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  scroll-margin-top: 0;
+}
+
+.contact__content {
+  max-width: 1000px;
+  padding-top: 4rem;
+}
+
+.contact__eyebrow {
+  margin: 0 0 2rem;
+  color: #eab308;
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.contact__title {
+  margin: 0;
+  color: #e7e7de;
+  font-size: clamp(4.5rem, 10vw, 9rem);
+  font-weight: 500;
+  line-height: 0.9;
+  letter-spacing: -0.06em;
+}
+
+.contact__description {
+  max-width: 550px;
+  margin: 3rem 0 0;
+  color: #888;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.contact__email {
+  display: inline-block;
+  margin-top: 2.5rem;
+  color: #e7e7de;
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  text-decoration: none;
+  border-bottom: 1px solid #444;
+  padding-bottom: 0.4rem;
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.contact__email:hover {
+  color: #eab308;
+  border-color: #eab308;
+}
+
+.contact__links {
+  display: flex;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.contact__links a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #eab308;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.contact__links a span {
+  color: #eab308;
+  font-size: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.contact__links a:hover {
+  color: #eab308;
+}
+
+.contact__links a:hover span {
+  transform: translate(3px, -3px);
+}
+
+.contact__footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+  border-top: 1px solid #222;
+  color: #444;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}

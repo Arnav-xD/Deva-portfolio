@@ -1,0 +1,128 @@
+.projects {
+  min-height: 100vh;
+  padding: 10rem 8vw;
+  scroll-margin-top: 0;
+}
+
+.projects__header {
+  max-width: 800px;
+  margin-bottom: 7rem;
+}
+
+.projects__eyebrow {
+  margin: 0 0 1rem;
+  color: #eab308;
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.projects__title {
+  margin: 0;
+  color: #e7e7de;
+  font-size: clamp(4rem, 8vw, 7rem);
+  font-weight: 500;
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+}
+
+.projects__intro {
+  max-width: 620px;
+  margin: 2rem 0 0;
+  color: #777;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.projects__list {
+  max-width: 1050px;
+}
+
+.project {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 2rem;
+  padding: 4rem 0;
+  border-top: 1px solid #222;
+}
+
+.project:last-child {
+  border-bottom: 1px solid #222;
+}
+
+.project__number {
+  color: #555;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.85rem;
+  padding-top: 0.3rem;
+}
+
+.project__content {
+  max-width: 850px;
+}
+
+.project__status {
+  margin: 0 0 0.8rem;
+  color: #eab308;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.project__title {
+  margin: 0;
+  color: #e7e7de;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+
+.project__subtitle {
+  margin: 0.75rem 0 0;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.project__description {
+  max-width: 700px;
+  margin: 1.75rem 0 0;
+  color: #999;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.project__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1.75rem;
+}
+
+.project__tags span {
+  padding: 0.45rem 0.8rem;
+  border: 1px solid #292929;
+  color: #777;
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+}
+
+.project__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+  color: #eab308;
+  font-size: 0.85rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.project__link span {
+  font-size: 1rem;
+}
+
+.project__link:hover {
+  color: #facc15;
+}

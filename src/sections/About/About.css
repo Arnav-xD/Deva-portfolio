@@ -1,0 +1,52 @@
+.about {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 6rem 8vw;
+}
+
+.about__content {
+  max-width: 900px;
+}
+
+.about__eyebrow {
+  margin: 0 0 1.5rem;
+  color: #eab308;
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.about__title {
+  margin: 0;
+  color: #e7e7de;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.about__name {
+  margin: 0.4rem 0 0;
+  color: #eab308;
+  font-size: clamp(4rem, 9vw, 8rem);
+  font-weight: 600;
+  line-height: 0.95;
+  letter-spacing: -0.06em;
+}
+
+.about__description {
+  max-width: 700px;
+  margin: 2.5rem 0 0;
+  color: #c4c4c4;
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  line-height: 1.7;
+}
+
+.about__current {
+  max-width: 650px;
+  margin: 1.5rem 0 0;
+  color: #777;
+  font-size: 1rem;
+  line-height: 1.7;
+}
