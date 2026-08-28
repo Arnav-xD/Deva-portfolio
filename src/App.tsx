@@ -147,4 +147,5 @@ export default App;
 
 
 
-//removed CLickSpark as of now
+//removed ClickSpark as of now. 
+//Change the <.../> to <name/> when adding a new section with details, for css make changes same as previous one.
