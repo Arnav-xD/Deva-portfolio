@@ -136,7 +136,7 @@ function App() {
           <Skills />
 
           <Education />
-
+          
           <Contact />
         </main>
       </div> 
