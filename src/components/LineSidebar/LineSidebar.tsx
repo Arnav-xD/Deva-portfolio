@@ -193,18 +193,21 @@ const activeIndex =
         {items.map((label, index) => (
           <li
             key={`${label}-${index}`}
-            ref={el => {
-              itemRefs.current[index] = el;
-            }}
+            ref={el => { itemRefs.current[index] = el; }}
             className="line-sidebar__item"
-            aria-current={activeIndex === index ? 'true' : undefined}
-            onClick={() => handleClick(index, label)}
           >
-            {showMarker && <span className="line-sidebar__marker" aria-hidden="true" />}
-            <span className="line-sidebar__label">
-              {showIndex && <span className="line-sidebar__index">{String(index + 1).padStart(2, '0')}</span>}
-              <span className="line-sidebar__text">{label}</span>
-            </span>
+            <a
+              href={`#${label.toLowerCase()}`}
+              className="line-sidebar__link"
+              aria-current={activeIndex === index ? 'location' : undefined}
+              onClick={event => { event.preventDefault(); handleClick(index, label); }}
+            >
+              {showMarker && <span className="line-sidebar__marker" aria-hidden="true" />}
+              <span className="line-sidebar__label">
+                {showIndex && <span className="line-sidebar__index">{String(index + 1).padStart(2, '0')}</span>}
+                <span className="line-sidebar__text">{label}</span>
+              </span>
+            </a>
           </li>
         ))}
       </ul>

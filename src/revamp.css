@@ -1,0 +1,101 @@
+
+:root{font-family:'DM Sans',sans-serif;color:#eae9e2;background:#080807;font-synthesis:none}
+html{scroll-padding-top:3rem}
+body{font-family:'DM Sans',sans-serif}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:2px solid #eab308;outline-offset:5px}
+.app{background:#080807;overflow:clip;isolation:isolate}
+.app::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;background:radial-gradient(ellipse 70% 40% at 65% 0%,rgba(234,179,8,.055),transparent 75%)}
+.app__background{opacity:.47}
+.app__sidebar{top:0;bottom:0;left:0;width:215px;padding:40px 0 28px 27px;transform:none;display:flex;flex-direction:column;align-items:flex-start;border-right:1px solid rgba(245,240,210,.09);background:rgba(8,8,7,.62);backdrop-filter:blur(12px)}
+.sidebar-brand,.mobile-brand{font:700 1.85rem/1 'Space Grotesk',sans-serif;letter-spacing:-.09em;text-decoration:none;color:#ecebe5}
+.sidebar-brand span,.mobile-brand span{color:#eab308}
+.app__sidebar .line-sidebar{margin:auto 0;padding-left:41px}
+.app__sidebar .line-sidebar__label{font-family:'DM Sans',sans-serif;letter-spacing:-.02em}
+.app__sidebar .line-sidebar__index{font-family:'DM Mono',monospace;font-size:.72em}
+.sidebar-bottom{display:flex;flex-direction:column;gap:12px;padding-left:1px;font:10px 'DM Mono',monospace;letter-spacing:.06em;color:#77786c}
+.sidebar-bottom a{color:#d5d4cb;text-decoration:none;width:max-content}
+.sidebar-bottom a:hover{color:#eab308}
+.app__content{margin-left:215px;min-width:0}
+.mobile-header,.mobile-nav{display:none}
+.about,.projects,.experience,.skills,.education,.contact{position:relative;padding:115px clamp(30px,7.4vw,136px);scroll-margin-top:0}
+.about{min-height:100svh;padding-top:55px;padding-bottom:44px}
+.about__content{width:100%;max-width:1250px;display:flex;flex-direction:column;min-height:calc(100svh - 99px)}
+.about__topline{display:flex;justify-content:space-between;align-items:center;gap:1rem;margin-bottom:auto}
+.about__eyebrow,.projects__eyebrow,.experience__eyebrow,.skills__eyebrow,.education__eyebrow,.contact__eyebrow{font:500 .72rem 'DM Mono',monospace;letter-spacing:.11em;text-transform:uppercase;color:#eab308}
+.about__edition,.micro-label,.about__scroll,.about__note>span:last-child,.project__number,.project__status,.project__ongoing,.experience__number,.experience__date,.skills__number,.education__number,.education__date{font:400 .68rem/1.5 'DM Mono',monospace;letter-spacing:.06em}
+.about__edition{color:#66665d}
+.about__title{font:400 clamp(2.2rem,4vw,4.7rem)/1.1 'Space Grotesk',sans-serif;letter-spacing:-.07em;margin:5rem 0 0}
+.about__name{font-family:'Space Grotesk',sans-serif!important;font-size:clamp(4.4rem,10.5vw,11.7rem)!important;font-weight:600!important;letter-spacing:-.087em!important;line-height:1.04!important;color:#eab308!important;margin:0!important;max-width:100%;overflow-wrap:break-word}
+.about__lower{display:flex;align-items:flex-end;justify-content:space-between;gap:3rem;margin-top:2.7rem}
+.about__intro{max-width:680px}
+.about__description{font:400 clamp(1.1rem,1.55vw,1.45rem)/1.6 'DM Sans',sans-serif;color:#dbdad1;margin:0}
+.about__current{font:400 .98rem/1.75 'DM Sans',sans-serif;color:#93938a;margin:1.15rem 0 0}
+.about__actions{display:flex;align-items:center;gap:28px;flex-wrap:wrap;margin-top:2.3rem}
+.button-primary{display:inline-flex;gap:38px;align-items:center;justify-content:space-between;background:#eab308;color:#101008;padding:16px 19px;text-decoration:none;font:600 .87rem 'DM Sans',sans-serif;transition:background .2s,transform .2s}
+.button-primary:hover{background:#ffd43b;transform:translateY(-2px)}
+.button-text{font:500 .85rem 'DM Sans',sans-serif;color:#deddd2;text-decoration:none;border-bottom:1px solid #66665a;padding:10px 0}
+.button-text:hover{color:#eab308;border-color:#eab308}
+.about__note{display:flex;flex-direction:column;gap:1rem;min-width:220px;padding:21px 0;border-top:1px solid #515044;border-bottom:1px solid #515044}
+.about__note .micro-label{color:#eab308}
+.about__note strong{font:500 1.15rem/1.4 'Space Grotesk',sans-serif;letter-spacing:-.04em}
+.about__note-line{height:1px;background:#36362e;width:100%}
+.about__note>span:last-child{color:#76766f}
+.about__scroll{display:flex;align-items:center;gap:14px;color:#a5a59d;text-decoration:none;margin-top:auto;padding-top:4.5rem}
+.about__scroll>span:last-child{margin-left:auto;color:#6e6e64}
+.scroll-line{height:1px;width:36px;background:#eab308}
+.section-heading{max-width:900px;margin-bottom:4rem}
+.projects__title,.experience__title,.skills__title,.education__title,.contact__title{font:600 clamp(3.5rem,6vw,7rem)/1.02 'Space Grotesk',sans-serif;letter-spacing:-.075em;color:#ecebe5;margin:0}
+.projects__title em{font-style:normal;color:#eab308}
+.heading-period{color:#eab308}
+.projects__intro,.skills__intro,.section-description{font:400 1.03rem/1.75 'DM Sans',sans-serif;max-width:640px;color:#9d9b93;margin-top:1.5rem}
+.projects__list{max-width:1250px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.project{display:flex;flex-direction:column;min-width:0;min-height:440px;position:relative;border:1px solid #313028;padding:28px;background:linear-gradient(145deg,rgba(24,24,21,.94),rgba(11,11,10,.9));overflow:hidden;transition:border-color .25s,transform .25s}
+.project:hover{border-color:rgba(234,179,8,.5);transform:translateY(-3px)}
+.project--featured{grid-column:1/-1;min-height:550px;background:radial-gradient(circle at 80% 45%,rgba(234,179,8,.075),transparent 45%),#141410}
+.project__top{display:flex;justify-content:space-between;align-items:center;gap:15px}
+.project__number{color:#78776d}
+.project__status{display:inline-flex;gap:9px;align-items:center;color:#d5cda2;text-transform:uppercase}
+.status-dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:#eab308;box-shadow:0 0 10px rgba(234,179,8,.45)}
+.project__content{position:relative;z-index:2;display:flex;flex-direction:column;justify-content:space-between;align-items:flex-start;flex:1;max-width:none;padding-top:65px}
+.project__title{font:500 clamp(1.9rem,3.5vw,3.3rem)/1.08 'Space Grotesk',sans-serif;letter-spacing:-.065em;color:#f0efe8;max-width:800px}
+.project--featured .project__title{font-size:clamp(2.8rem,5.5vw,6.2rem)}
+.project__subtitle{font:400 1rem 'DM Mono',monospace;color:#c0b574;margin-top:.8rem}
+.project__description{font:400 .94rem/1.8 'DM Sans',sans-serif;color:#a5a399;max-width:620px;margin-top:1.4rem}
+.project__tags,.experience__tags{margin-top:1.65rem;gap:.45rem}
+.project__tags span,.experience__tags span,.skills__items span{font:400 .71rem 'DM Mono',monospace;letter-spacing:0;border:1px solid #3c3b32;padding:8px 10px;color:#b3b0a5}
+.project__link,.project__ongoing{margin-top:1.9rem;font:500 .73rem 'DM Mono',monospace;letter-spacing:.06em;text-transform:uppercase;color:#eab308}
+.project__link{display:inline-flex;gap:2rem;padding-bottom:6px;border-bottom:1px solid #806c25}
+.project__link:hover{color:#fff3b8}
+.project__graphic{pointer-events:none;position:absolute;right:8%;top:17%;width:250px;height:250px;border:1px solid rgba(234,179,8,.22);border-radius:50%;opacity:.8}
+.graph-orbit{position:absolute;inset:22px;border:1px dashed rgba(234,179,8,.28);border-radius:50%;transform:rotate(30deg) scaleX(.7)}
+.graph-orbit--two{transform:rotate(-55deg) scaleX(.66)}
+.graph-node{position:absolute;width:11px;height:11px;border:2px solid #eab308;background:#1c1a0f;border-radius:50%;box-shadow:0 0 18px rgba(234,179,8,.3)}
+.graph-node--one{left:20%;top:22%}.graph-node--two{right:8%;top:50%}.graph-node--three{bottom:9%;left:35%}.graph-node--four{top:32%;right:38%}
+.graph-word{font:9px 'DM Mono',monospace;letter-spacing:.08em;color:#9a894e;position:absolute;left:18%;bottom:-27px}
+.experience__list,.education__list{max-width:1140px}
+.experience__item,.education__item{grid-template-columns:175px minmax(0,1fr);gap:3.7rem;border-color:#333229;padding:3.5rem 0;transition:background .2s}
+.experience__item:first-child,.education__item:first-child{border-top:1px solid #333229}
+.experience__date,.education__date{color:#a39f90}
+.experience__organization,.education__institution{font:500 .75rem 'DM Mono',monospace;letter-spacing:.09em;color:#eab308}
+.experience__role,.education__degree{font:500 clamp(2.2rem,3.6vw,4rem)/1.08 'Space Grotesk',sans-serif;letter-spacing:-.065em}
+.experience__position,.education__field{color:#b8b6ac}
+.experience__description,.education__description{font:400 .95rem/1.8 'DM Sans',sans-serif;color:#a09e94;margin-top:1.25rem}
+.skills__grid{max-width:1100px;border-color:#333229;grid-template-columns:repeat(3,minmax(0,1fr))}
+.skills__group{border-color:#333229;min-height:300px}
+.skills__group-title{font:500 1.3rem 'Space Grotesk',sans-serif;letter-spacing:-.035em}
+.skills__items span{transition:color .2s,border-color .2s,background .2s}
+.skills__items span:hover{background:rgba(234,179,8,.07)}
+.education__status{color:#d3be66}
+.education__achievement{color:#dbd8c5}
+.contact{min-height:85svh;padding-bottom:32px}
+.contact__content{padding-top:0}
+.contact__title{font-size:clamp(4.2rem,8.3vw,9.5rem);line-height:1.03}
+.contact__description{color:#aaa89e;font:400 1.1rem/1.8 'DM Sans',sans-serif}
+.contact__email{font:500 clamp(1.2rem,2.3vw,2rem) 'Space Grotesk',sans-serif;letter-spacing:-.025em;color:#eab308;border-bottom-color:#77703e;overflow-wrap:anywhere}
+.contact__links a{font:500 .85rem 'DM Mono',monospace}
+.contact__footer{border-color:#36352f;font-family:'DM Mono',monospace;color:#89867d}
+@media(max-width:1190px){.app__sidebar{width:180px;padding-left:17px}.app__content{margin-left:180px}.about,.projects,.experience,.skills,.education,.contact{padding-left:6vw;padding-right:6vw}.about__note{display:none}.project__graphic{right:3%;opacity:.38}}
+@media(max-width:900px){.app__sidebar{display:none}.app__content{margin-left:0}.mobile-header{position:fixed;z-index:25;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;height:65px;padding:0 24px;background:rgba(8,8,7,.92);border-bottom:1px solid #282820;backdrop-filter:blur(15px)}.mobile-brand{font-size:1.5rem}.mobile-contact{font:500 .8rem 'DM Sans',sans-serif;color:#eab308;text-decoration:none}.mobile-nav{display:flex;position:fixed;z-index:25;bottom:0;left:0;right:0;overflow-x:auto;align-items:center;gap:22px;padding:15px 24px calc(15px + env(safe-area-inset-bottom));border-top:1px solid #353329;background:rgba(8,8,7,.97);backdrop-filter:blur(15px);scrollbar-width:none}.mobile-nav::-webkit-scrollbar{display:none}.mobile-nav a{flex:none;text-decoration:none;color:#9f9f95;font:500 .74rem 'DM Mono',monospace}.mobile-nav a[aria-current="location"]{color:#eab308}.about{padding-top:95px}.about__content{min-height:calc(100svh - 139px)}.contact{padding-bottom:95px}.about,.projects,.experience,.skills,.education,.contact{scroll-margin-top:66px}}
+@media(max-width:650px){.about,.projects,.experience,.skills,.education,.contact{padding:90px 22px}.about{min-height:100svh;padding-top:110px;padding-bottom:60px}.about__edition{display:none}.about__title{margin-top:4rem}.about__name{font-size:clamp(3.65rem,14vw,6.3rem)!important}.about__description{font-size:1.04rem}.about__current{font-size:.9rem}.about__lower{margin-top:2.5rem}.about__scroll{padding-top:3rem}.projects__list{grid-template-columns:1fr}.project--featured{grid-column:auto}.project,.project--featured{min-height:0;padding:23px}.project__content{padding-top:85px}.project__graphic{width:165px;height:165px;top:70px;right:-42px;opacity:.24}.project__title,.project--featured .project__title{font-size:clamp(2.2rem,9vw,3.6rem)}.experience__item,.education__item{grid-template-columns:1fr;gap:1.3rem;padding:3rem 0}.experience__meta,.education__meta{flex-direction:row;justify-content:space-between}.skills__grid{grid-template-columns:1fr}.skills__group,.skills__group:first-child{min-height:0;padding:2rem 0;border-right:0;border-bottom:1px solid #333229}.skills__group:last-child{border-bottom:0}.projects__title,.experience__title,.skills__title,.education__title{font-size:clamp(3.2rem,11vw,5rem)}.contact__title{font-size:clamp(3.75rem,13vw,6rem)}.contact__links{flex-wrap:wrap}.about__eyebrow{font-size:.65rem}.contact__footer{padding-bottom:10px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
