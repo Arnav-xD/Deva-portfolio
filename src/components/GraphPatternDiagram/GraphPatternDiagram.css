@@ -1,0 +1,52 @@
+
+.graph-study {
+  margin: 0;
+  width: 100%;
+  max-width: 420px;
+  justify-self: end;
+  align-self: center;
+  border: 1px solid rgba(234, 179, 8, 0.22);
+  background:
+    linear-gradient(rgba(234, 179, 8, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(234, 179, 8, 0.025) 1px, transparent 1px),
+    radial-gradient(circle at 27% 38%, rgba(234, 179, 8, 0.055), transparent 72%),
+    #0e0e0b;
+  background-size: 26px 26px, 26px 26px, auto, auto;
+  padding: 17px;
+  box-sizing: border-box;
+}
+.graph-study__heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  color: #c7ba7c;
+  font: 500 9px/1.4 'DM Mono', monospace;
+  letter-spacing: 0.07em;
+  white-space: nowrap;
+}
+.graph-study__heading span:last-child { color: #817b67; }
+.graph-study__drawing { width: 100%; height: auto; display: block; margin-top: 15px; overflow: visible; }
+.graph-study__drawing text { font-family: 'DM Mono', monospace; letter-spacing: 0.055em; }
+.graph-study__label { fill: #b9b6a2; font-size: 9px; }
+.graph-study__edge { stroke: #575441; stroke-width: 1.5; fill: none; }
+.graph-study__walk-glow { stroke: rgba(234, 179, 8, .20); stroke-width: 12; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.graph-study__walk { stroke: #eab308; stroke-width: 2.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.graph-study__node circle { fill: #13130f; stroke: #77725a; stroke-width: 1.4; }
+.graph-study__node text { font-size: 10px; fill: #aeac9c; }
+.graph-study__node--walk circle { fill: #1a180e; stroke: #eab308; stroke-width: 2; }
+.graph-study__node--walk text { fill: #f5dc75; }
+.graph-study__connector { stroke: #9d9162; stroke-width: 1.2; fill: none; }
+.graph-study__motif-edge { stroke: #d9b747; stroke-width: 1.8; fill: none; }
+.graph-study__motif-node { fill: #eab308; stroke: #19170b; stroke-width: 2; }
+.graph-study__motif-caption { font-size: 9px; fill: #baac75; }
+.graph-study__divider { stroke: #393729; stroke-width: 1; }
+.graph-study__walk-label { font-size: 9px; fill: #8d8872; }
+.graph-study__sequence { font-size: 11px; fill: #eab308; }
+.graph-study__caption { margin-top: 10px; display: flex; flex-wrap: wrap; align-items: center; gap: 6px; color: #c3bd9c; font: 400 9px/1.7 'DM Mono', monospace; }
+.graph-study__arrow { color: #eab308; }
+.graph-study__disclaimer { color: #6b695b; margin: 8px 0 0; font: 400 9px/1.5 'DM Mono', monospace; }
+@media (max-width: 650px) {
+  .graph-study { max-width: none; padding: 11px; }
+  .graph-study__heading { font-size: 8px; }
+  .graph-study__caption { font-size: 8px; }
+}

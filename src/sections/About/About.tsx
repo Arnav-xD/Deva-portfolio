@@ -7,7 +7,6 @@ function About() {
       <div className="about__content">
         <div className="about__topline">
           <p className="about__eyebrow">B.Tech CSE · AI &amp; ML · PES University</p>
-          <span className="about__edition">PORTFOLIO / 2026</span>
         </div>
         <p className="about__title">Hi, I'm</p>
         <SplitText

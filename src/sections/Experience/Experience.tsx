@@ -24,7 +24,7 @@ const experiences = [
     tags: ['Neural Graph Pattern Machines', 'Graph Neural Networks', 'PyTorch', 'NetworkX', 'Graph Learning', 'PyTorch Geometric']
   },
   {
-    date: '',
+    date: 'Sept 2026 — Present',
     organization: 'Layer8 PESUECC',
     role: 'Webmaster',
     position: 'Web Development & Administration',

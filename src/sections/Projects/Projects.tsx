@@ -1,4 +1,5 @@
 import './Projects.css';
+import GraphPatternDiagram from '../../components/GraphPatternDiagram/GraphPatternDiagram';
 
 const projects = [
   {
@@ -43,17 +44,7 @@ function Projects() {
               <span className="project__number">{project.number} / 03</span>
               <span className="project__status"><span className="status-dot" />{project.status}</span>
             </div>
-            {project.featured && (
-              <div className="project__graphic" aria-hidden="true">
-                <span className="graph-orbit graph-orbit--one" />
-                <span className="graph-orbit graph-orbit--two" />
-                <span className="graph-node graph-node--one" />
-                <span className="graph-node graph-node--two" />
-                <span className="graph-node graph-node--three" />
-                <span className="graph-node graph-node--four" />
-                <span className="graph-word">STRUCTURE / PATTERNS</span>
-              </div>
-            )}
+            {project.featured && <GraphPatternDiagram />}
             <div className="project__content">
               <div>
                 <h3 className="project__title">{project.title}</h3>
